@@ -1,0 +1,36 @@
+.formControl.error input,
+.formControl.error textarea
+{
+    border: solid red 2px;
+}
+
+.formControl.error span
+{
+    color: red;
+}
+
+.formControl{
+	display: grid;
+}
+
+.email {
+    grid-template: 1fr 1fr/1fr;
+  }
+
+  .password {
+    grid-template: 1fr 1fr/1fr;
+  }
+
+  .confirmPassword {
+    grid-template: 1fr 1fr/1fr;
+  }
+
+  .captcha {
+    grid-template: 1fr/1fr;
+  }
+
+  .formSummaryError {
+    border: red 1px solid;
+    padding: 5px;
+    color: red;
+}

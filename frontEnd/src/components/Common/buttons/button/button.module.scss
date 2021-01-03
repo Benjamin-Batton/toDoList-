@@ -1,0 +1,41 @@
+@import "../../../../styled/mixins/button/button.scss";
+//СДЕЛАТЬ КНОПКИ PRIMARY и пр. и уже вместо миксина button подставлять миксин примари и пр
+
+$buttons: (
+  "header": $bg_color_header-hover_elem,
+  "body-menu": $bg_color_body-menu-hover_elem,
+  "body-content": $bg_color_body-content-hover_elem,
+  "footer": $bg_color_footer-hover_elem,
+);
+
+@each $btn, $color in $buttons {
+  .buttonWithGrayHoverFor-#{$btn} {
+    @include button($elements-color_main, "pointer", "", "", $color, "", "5px");
+    margin: 5px;
+  }
+}
+
+.button {
+  @include button;
+}
+
+.buttonGreen {
+  @include greenButton;
+}
+
+.buttonOrange {
+  @include orangeButton;
+}
+
+.orangeButtonWithIcon {
+  @include orangeButtonWithIcon;
+}
+
+.buttonOrangeWithDecoration {
+  @include orangeButtonWithDecoration;
+}
+
+.disabled {
+  @include button;
+  background-color: $bg_color_button-disabled;
+}

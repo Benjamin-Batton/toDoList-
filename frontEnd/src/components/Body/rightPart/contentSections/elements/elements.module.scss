@@ -1,0 +1,42 @@
+//всех элементов или как они там дальше будут называться, должны быть тут
+@import "../../../../../styled/constants.scss";
+
+.taskEditorContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .taskEditor {
+    display: flex;
+    min-height: 90px;
+    flex-direction: column;
+    border: 1px solid $tasks_editor_border-color;
+    border-radius: 5px; 
+  }
+  .taskEditorInput {
+    border: none;
+    background: $bg_color_body_task-editor_input;
+  }
+  .taskEditorExtraFields {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+  }
+  .leftPartExtraFields{
+   display: flex;
+  }
+  .rightPartExtraFields{
+    display: flex;
+  }
+  
+.buttonSvg{
+    display: flex;
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20%;
+    cursor: pointer;
+    fill: $color_sub-icons;
+}

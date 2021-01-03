@@ -1,0 +1,45 @@
+@import "../../styled/constants.scss";
+.orangeReverseButton {
+  display: grid;
+  cursor: pointer;
+  grid-auto-flow: column;
+  margin-left: 4px;
+  grid-template-columns: min-content;
+  align-items: center;
+  grid-column-gap: 8px;
+}
+.orangeReverseButton:hover .plusIcon {
+  fill: $bg_main;
+}
+
+.orangeReverseButton:hover .circleIcon {
+  background: $orange_button_color;
+}
+.orangeReverseButton:hover div:last-child {
+  color: $orange_button_color;
+}
+
+.circleIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+.plusIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: $orange_button_color;
+}
+.buttonWithOrangeBackground {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  color: $elements-color_main-reverse;
+  background: $orange_button_color;
+  justify-content: center;
+  padding: 4px 10px;
+}

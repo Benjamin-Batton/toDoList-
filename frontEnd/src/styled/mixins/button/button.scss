@@ -1,0 +1,162 @@
+@import "../../constants.scss";
+
+//BUTTON MIXINS
+@mixin button(
+  $color: $elements-color_main,
+  $_cursor: "pointer",
+  $_decoration: "",
+  $_hover-color: "",
+  $_hover-bg-color: "",
+  $_border: "",
+  $_border-radius: ""
+) {
+  display: flex;
+  text-decoration: none;
+  color: $color;
+  @include hover(
+    $_cursor,
+    $_decoration,
+    $_hover-color,
+    $_hover-bg-color,
+    $_border,
+    $_border-radius
+  );
+}
+
+// @mixin buttonWithGrayHover($type:"header") {
+
+// 	@if $type=="header" {
+// 		@include button($elements-color_main, "pointer", "", "", $bg_color_header-hover_elem, "", "5px");
+// 	}
+
+// 	@else if $type=="body-menu" {
+// 		@include button($elements-color_main, "pointer", "", "", $bg_color_body-menu-hover_elem, "", "5px");
+// 	}
+
+// 	@else if $type=="body-content" {
+// 		@include button($elements-color_main, "pointer", "", "", $bg_color_body-content-hover_elem, "", "5px");
+// 	}
+
+// 	@else {
+// 		@include button($elements-color_main, "pointer", "", "", $bg_color_footer-hover_elem, "", "5px");
+// 	}
+
+// 	margin: 5px;
+// }
+
+// ПОСТАВИТЬ INCLUDE НА первое место
+@mixin orangeButton {
+  @include button($orange_button_color);
+}
+
+@mixin greenButton {
+  @include button($green_button_color);
+}
+
+@mixin orangeButtonWithIcon {
+  @include button("gray", "pointer", "", "");
+
+  :nth-child(1) {
+    color: $orange_button_color;
+    //https://ru.stackoverflow.com/questions/623316/Как-через-css-изменить-цвет-png-изображения
+  }
+
+  &:hover > :nth-child(1) {
+    background-color: $orange_button_color;
+    color: black;
+  }
+
+  &:hover > :nth-child(2) {
+    color: $orange_button_color;
+  }
+
+  //   .elemPlus{
+  //     position: relative;
+  //     border-radius: 50%;
+  //   .elemHorizontal{
+  //     position: absolute;
+  //     top: 2px;
+  //     left: 8px;
+  //     width: 1px;
+  //     height: 14px;
+  //     background-color: #ff7066;
+  //   }
+  //   .elemVertical{
+  //     position: absolute;
+  //     top: 9px;
+  //     left: 2px;
+  //     width: 14px;
+  //     height: 1px;
+  //     background-color: #ff7066;
+  //   };
+  //  }
+
+  //   .buttonText{
+  //     color: rgba(255,255,255,0.87);
+  //     display: grid;
+  //     margin-left: 20px;
+  //   }
+  // @include elemPlus;
+  // @include buttonText;
+
+  // &:hover > :first-child > * {
+  //   background-color: black;
+  // }
+}
+
+@mixin orangeButtonWithDecoration {
+  @include button($orange_button_color, "pointer", "underline");
+}
+
+//COMMON MIXINS
+
+@mixin hover(
+  $cursor: "",
+  $decoration: "",
+  $hover-color: "",
+  $hover-bg-color: "",
+  $border: "",
+  $border-radius: ""
+) {
+  &:hover {
+    cursor: #{$cursor};
+    text-decoration: #{$decoration};
+    color: #{$hover-color};
+    background-color: #{$hover-bg-color};
+    border: #{$border};
+    border-radius: #{$border-radius};
+  }
+}
+
+@mixin buttonText {
+  &.buttonText {
+    color: rgba(255, 255, 255, 0.87);
+    display: grid;
+    margin-left: 20px;
+  }
+}
+
+@mixin elemPlus {
+  &.elemPlus {
+    position: relative;
+    border-radius: 50%;
+
+    .elemHorizontal {
+      position: absolute;
+      top: 2px;
+      left: 8px;
+      width: 1px;
+      height: 14px;
+      background-color: #ff7066;
+    }
+
+    .elemVertical {
+      position: absolute;
+      top: 9px;
+      left: 2px;
+      width: 14px;
+      height: 1px;
+      background-color: #ff7066;
+    }
+  }
+}

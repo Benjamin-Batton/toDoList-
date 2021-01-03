@@ -1,0 +1,13 @@
+.email {
+  grid-template: 1fr/1fr;
+}
+.password {
+  grid-template: 1fr/1fr;
+}
+.confirmPassword {
+  grid-template: 1fr/1fr;
+}
+.btns {
+  justify-items: center;
+  align-items: center;
+}

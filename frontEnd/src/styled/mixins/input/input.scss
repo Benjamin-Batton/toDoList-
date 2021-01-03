@@ -1,0 +1,8 @@
+@mixin inputContainer($colorText:"rgba(255,255,255,0.87)",$colorBorder:"orange",){
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   margin-top:15px;
+   border: 1px solid white;
+   border-radius: 3px;
+}

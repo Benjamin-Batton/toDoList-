@@ -1,0 +1,10 @@
+*.DS_Store
+*.log
+.idea
+.env
+node_modules
+build
+dist
+yarn-error.log
+uploads/*
+uploads/!.dummy

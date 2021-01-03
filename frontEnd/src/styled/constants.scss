@@ -1,0 +1,151 @@
+@use "sass:color";
+//HEADER
+//header-backgrounds
+//backgound color for header
+$N30: var(--n30);
+
+//color for header icons and text
+$N600: var(--n600);
+//для всего выпдающего и вылетающего из хедера динамические использовать другие блоки стилей , кароче все побочное стилизуется отдельно
+
+//BODY
+
+//body-backgrounds
+//backgroun color for body
+
+//color
+
+//BODY-MENU
+
+//background color for body-menu
+$N20: var(--n20);
+
+//BODY-CONTENT
+//DROPDOWN BLOCKS - добавить задачу, напоминания, настройки и т.п
+//FOOTER
+
+//OTHER
+// bg_color_header-hover_elem
+$N30a3: var(--n30a3);
+
+// bg_color_body-menu-hover_elem
+$N20a3: var(--n20a3);
+
+// bg_color_body-content-hover_elem
+$N30a8: var(--n30a8);
+
+// bg_color_body-transparent_elem
+$N40a9: var(--n40a9);
+
+//bg_color_body-leftPart-hover_elem
+$N45a9: var(--n45a9);
+
+//bg_color_body-extentionPanel-hover_elem
+$N50a9: var(--n50a9);
+// bg_color_footer-hover_elem
+$N30a4: var(--n30a4);
+
+// bg_color_body_task-editor_input
+$N70a4: var(--n70a4);
+
+//ПОВТОРАЯЕТСЯ --N100 - COLOR FOR BODY SUBITEMS - цвет для элементов с которыми можно взаимодействовать(в ТЕЛЕ проекта находящиеся)
+//color for body subitems - цвет для элементов с которыми можно взаимодействовать(в ТЕЛЕ проекта находящиеся
+$N100: var(--n100);
+
+// color for body subelements - цвет красный для субкнопок, которые встречаются редко
+$B500: var(--b500);
+// main color in project - главные цвет для всех элементов в проекте
+$N900: var(--n900);
+
+// main color in project reverse - главные цвет для всех элементов в проекте противоположный
+$N800: var(--n800);
+
+//other-backgrounds and colors
+// main-background - главный бэкграунд
+$N0: var(--n0);
+
+//tasks-editor_border-color - редактирование/добавление таска цвет бордера
+$N60: var(--n60);
+
+//tasks-editor_border-color_active - редактирование/добавление таска цвет бордера при клике на компонент
+$N60a8: var(--n60a8);
+
+//BORDER BACKGROUND FOR ALL BORDER-BLOCKS - цвет бордера(ДЛЯ ВСЕХ БЛОКОВ) для разделения блоков на темы
+$N10: var(--n10);
+
+// Blue
+$B100: var(--b100);
+$B300: var(--b300);
+$B500a3: var(--b500a3);
+$B900: var(--b900);
+
+// Grey
+$N10a3: var(--n10a3);
+$N500: var(--n500);
+
+// Green
+$G400: var(--g400);
+$G500: var(--g500);
+$G500a1: var(--g500a1);
+$G500a2: var(--g500a2);
+
+// Red
+$R400: var(--r400);
+$R500: var(--r500);
+$R500a1: var(--r500a1);
+$R500a2: var(--r500a2);
+
+// Other
+$border-blocks_color: $N10;
+$body-color_subitems: $N100;
+
+$border_radius: 5px;
+$col_spacing: 8px;
+$col_width: 100% / 8;
+
+//BG
+//container-hover-items-colors
+
+// $container-colors:(
+//  header: $N30;
+// );
+
+$bg_main: $N0;
+$bg_color_body-conet_menu: $N0;
+$bg_color_header: $N30;
+$bg_color_leftPart-body: $N20;
+$bg_color_header_elem: $N600;
+// $bg_color_body_elem: $N600;
+$bg_color_header-hover_elem: $N30a3;
+$bg_color_body-menu-hover_elem: $N20a3;
+$bg_color_body-content-hover_elem: $N30a8;
+$bg_color_body-topFilter-hover_elem: $N45a9;
+$bg_color_body-extentionPanel-hover_elem: $N50a9;
+$bg_color_body-transparent_elem: $N40a9;
+$bg_color_footer-hover_elem: $N30a4;
+$bg_color_button-disabled: $N100;
+$bg_color_main-reverse: $N900;
+$bg_color_body_task-editor_input: $N70a4;
+$bg_color_bottom_border: rgb(150, 147, 147);
+$bg_color_icons: rgb(227, 227, 227);
+$bg_color_sub-icons: rgb(128, 128, 128);
+
+//COLOR
+$elements-color_main: $N900;
+$elements-color_main-reverse: $N800;
+$orange_button_color: $R400;
+$color_sub-icons: rgb(128, 128, 128);
+$color_body-transparent_elem: $N40a9;
+$green_button_color: $G500;
+//OTHER
+
+//SUB-ICONS:- Icons in dropdown,words helpers and etc.
+$line_height: 20px;
+$tasks_editor_border-color: $N60;
+$tasks_editor_border-color_active: $N60a8;
+$table_col_padding_side: 5px;
+$table_col_padding_top: 2px;
+$trans: 0.2s ease;
+$letter_spacing: 1px;
+$fontSize: 14px;
+$fontFamily: Regular, "Roboto Condensed", sans-serif;

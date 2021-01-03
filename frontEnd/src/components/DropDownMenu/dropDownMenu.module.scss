@@ -1,0 +1,11 @@
+@import "../../styled/constants.scss";
+.dropDownMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}

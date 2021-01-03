@@ -1,0 +1,12 @@
+{
+  "name": "Project1",
+  "version": "1.0.0",
+  "description": "Webpack rules for this project",
+  "author": {
+    "email": "artem-1995effect@mail.ru",
+    "name": "Artsiom"
+  },
+  "dependencies": {
+
+  }
+}

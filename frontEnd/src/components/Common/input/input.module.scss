@@ -1,0 +1,57 @@
+.inputWrapp {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px;
+}
+
+// @import "../../../styled/mixins//input/input.scss";
+// .inputContainer{
+//   overflow:hidden;
+//    @include inputContainer(orange,blue);
+// }
+
+// #input{
+//   width:100%;
+//   height:100%;
+//   color:purple;
+//   padding-top: 20px;
+//   background-color: #1e1e1e;
+//   border: none;
+//   outline: none;
+// }
+
+// .label {
+//   position: absolute;
+//   height: 100%;
+//   bottom: -1%;
+//   width: 100%;
+//   border-bottom: 2px solid red;
+//   color: white;
+//   pointer-events: none;
+// }
+
+// .label::after{
+//   content: "";
+//   position: absolute;
+//   transform: translateX(-100%);
+//   transition: all 0.2s ease;
+//   border-bottom: 3px solid rgb(244, 85, 0);
+//   width: 100%;
+//   height: 100%;
+// }
+
+// .label span {
+//   position: absolute;
+//   bottom: 2px;
+//   transition: all 0.2s ease;
+// }
+
+// #input:focus + .label span, #input:valid + .label span{
+//   transform: translateY(-100%);
+//   font-size: 14px;
+//   color: rgb(244, 85, 0);
+// }
+
+// #input:focus + .label::after, #input:valid + .label::after{
+//   transform: translateX(0%);
+// }

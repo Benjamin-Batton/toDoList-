@@ -1,0 +1,191 @@
+@import "../../../styled/constants.scss";
+
+.menu {
+  display: grid;
+  position:relative;
+  padding: 20px 0px 0px 50px;
+  grid-template: min-content / 1fr;
+  align-items: start;
+  grid-row-gap: 15px;
+  transform: translateX(0%);
+  transition: transform 0.3s ease;
+  justify-content: start;
+  background-color: $bg_color_leftPart-body;
+}
+.menu.open{
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+.topMenu {
+  display: grid;
+  grid-template: min-content / 1fr;
+  grid-row-gap: 5px;
+}
+.topMenuItem {
+  display: grid;
+  padding: 5px 0px 5px 5px;
+  border-radius: 5px;
+  margin-right: 5px;
+  grid-auto-flow: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit !important;
+  justify-content: start;
+  grid-gap: 10px;
+}
+.topMenuItem:hover {
+  background: $bg_color_body-topFilter-hover_elem;
+}
+
+.taskExtentionPanel {
+  display: grid;
+  grid-template: min-content / 1fr;
+  position: relative;
+  grid-row-gap: 5px;
+}
+.extentionPanelItemWrapper {
+  display: grid;
+  grid-template: min-content / 1fr;
+}
+.extentionPanelItemWrapper.open .dropDownMenu {
+  max-height: 150px;
+  transition: all 150ms ease;
+}
+.extentionPanelItem {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr min-content;
+  align-items: center;
+  padding: 10px 0px 10px 5px;
+  margin-right: 5px;
+  font-weight: 900;
+  border-bottom: 1px solid $bg_color_bottom_border;
+  justify-content: space-between;
+  grid-gap: 10px;
+}
+.extentionPanelItem div:first-child {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: min-content;
+  grid-column-gap: 5px;
+}
+.extentionPanelItem:hover {
+  background: $bg_color_body-extentionPanel-hover_elem;
+}
+.extentionPanelItem:hover .quickAddItem {
+  opacity: 1;
+}
+.quickAddItem {
+  display: flex;
+  cursor: pointer;
+  z-index: 999;
+  align-items: center;
+  opacity: 0;
+}
+.dropDownMenu {
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 150ms ease;
+}
+.dropDownMenuItem {
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  padding: 5px 0px 5px 7px;
+  align-items: center;
+  justify-content: start;
+}
+
+.dropDownMenuItem:hover .dragItem {
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+.dragItem {
+  cursor: move;
+  display: none;
+  opacity: 0;
+  height: 20px;
+  width: 20px;
+  fill: $bg_color_bottom_border;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  left: -10px;
+}
+.circleItem {
+  height: 10px;
+  width: 10px;
+  margin-right: 7px;
+  border-radius: 50%;
+  background: $bg_color_bottom_border;
+}
+.dropDownMenuItem:hover {
+  background: $bg_color_body-extentionPanel-hover_elem;
+}
+.dropDownMenuItemText {
+  margin-left: 6px;
+}
+.arrowIconContainer {
+  width: 20px;
+  height: 20px;
+  display: flex;
+}
+
+.arrowIcon {
+  position: relative;
+}
+
+.arrowIcon:before,
+.arrowIcon:after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  left: 0px;
+  top: 10px;
+  transition: all 0.1s ease;
+  transform: rotate(-40deg);
+  // background-color: $bg_color_lines;
+  background: red;
+}
+
+.arrowIcon::after {
+  transform: rotate(40deg);
+  left: 7px;
+}
+.extentionPanelItemWrapper.open .arrowIcon:before {
+  transform: rotate(40deg);
+  transition: transform 0.1s ease;
+}
+
+.extentionPanelItemWrapper.open .arrowIcon:after {
+  transform: rotate(-40deg);
+  transition: transform 0.1s ease;
+}
+
+.open {
+}
+.active {
+  background: $bg_color_body-topFilter-hover_elem;
+  font-weight: 900;
+}
+
+@media screen and (min-width: 800px) {
+  .menu {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .menu {
+    transform: translateX(0%);
+  }
+}
+
+// .close{
+//     transform: translateX(-100%);
+// }
+// .open{
+//     transform: translateX(0%);
+// }

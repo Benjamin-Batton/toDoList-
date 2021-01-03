@@ -1,0 +1,14 @@
+.formControl {
+  display: flex;
+  flex-direction: column;
+}
+
+.formControl.active div:first-child {
+  border: 2px solid red;
+}
+
+.formControl.active span {
+  color: 2px solid red;
+}
+.active {
+}

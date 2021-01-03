@@ -1,0 +1,35 @@
+.email {
+  grid-template: 1fr 1fr/1fr;
+}
+
+.password {
+  grid-template: 1fr 1fr/1fr;
+}
+
+.confirmPassword {
+  grid-template: 1fr 1fr/1fr;
+}
+
+.captcha {
+  grid-template: 1fr/1fr;
+}
+.title {
+  align-self: center;
+}
+
+.btns {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.authForm {
+  display: grid;
+  grid-template: min-content / min-content;
+  border: 1px solid rgba(255, 255, 255, 0.87);
+  border-radius: 5px;
+}
+.loginForm {
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 10px;
+}

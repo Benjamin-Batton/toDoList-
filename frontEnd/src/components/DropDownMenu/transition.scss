@@ -1,0 +1,18 @@
+.main-menu-enter {
+  max-height: 0px;
+  overflow: hidden;
+  // transform: scale(0.9);
+}
+.main-menu-enter-active {
+  max-height: 150px;
+  // transform: translateX(0);
+  transition: all 600ms ease;
+}
+.main-menu-exit {
+  max-height: 150px;
+}
+.main-menu-exit-active {
+  overflow: hidden;
+  transition: all 300ms ease;
+  max-height: 0px;
+}

@@ -1,0 +1,90 @@
+/* Почти во всех компанентах используется d-grid  и g-t-c 1fr 1fr и g-t-r 1fr 1fr */
+// .bodyContainer {
+// 	display: grid;
+// 	grid-template: 100% / 1fr 3fr;
+// }
+.bodyContainer {
+	display: grid;
+	grid-template-columns: 350px 1fr;
+}
+
+.offersLinks {
+	display: grid;
+	grid-template: 1fr / 1fr;
+}
+
+.toDoContainerHeaderTitle {
+	display: grid;
+	grid-template: 1fr / 1fr 1fr;
+	justify-items: center;
+}
+
+.mainTaskContainer {
+	display: grid;
+	grid-template: 1fr / 25px 1fr;
+}
+
+/*
+.mainTaskContainer{
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    grid-template-rows: 1fr;
+}
+*/
+
+.commentHeader {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+}
+
+/* вынести на глобальную область т.к display grid почти везде нужен */
+
+.d_grid {
+	display: grid;
+}
+
+.commentUser {
+	display: grid;
+	justify-items: end;
+	align-items: end;
+}
+
+.commentImages {
+	display: grid;
+	justify-items: center;
+}
+
+.MainContentContainer {
+	overflow-y: scroll;
+	display: grid;
+	// grid-template: 1fr 1fr min-content / 1fr;
+	grid-template: 1fr / 1fr;
+}
+
+.MainContentContainerWithoutToday {
+	display: grid;
+	grid-template: 1fr 1fr / 1fr;
+}
+
+/*
+.correctTaskElementEdit:hover{
+    background-color: rgba(255,255,255,0.1);
+}
+.correctTaskElementContainerTerm:hover{
+    background-color: rgba(255,255,255,0.1);
+}
+.correctTaskElementComment:hover{
+    background-color: rgba(255,255,255,0.1);
+}
+.correctTaskElementMainEdit:hover{
+  background-color: rgba(255,255,255,0.1);
+}
+*/
+
+// NEW STYLES 20.09.2020;
+.FilterTitle {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+}

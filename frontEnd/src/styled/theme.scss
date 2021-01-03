@@ -1,0 +1,181 @@
+.light {
+  //HEADER
+
+  //header-backgrounds
+
+  //backgound color for header
+  --n30: rgb(217, 77, 68);
+
+  //color for header icons and text
+  --n600: rgb(172, 172, 172);
+  //для всего выпдающего и вылетающего из хедера динамические использовать другие блоки стилей , кароче все побочное стилизуется отдельно
+
+  //BODY
+
+  //body-backgrounds
+  //backgroun color for body
+
+  //color
+
+  //BODY-MENU
+
+  //background color for body-menu
+  --n20: rgb(245, 243, 243);
+
+  //BODY-CONTENT
+  //DROPDOWN BLOCKS - добавить задачу, напоминания, настройки и т.п
+  //FOOTER
+
+  //OTHER
+  // bg_color_header-hover_elem
+  --n30a3: rgba(194, 194, 194, 0.9);
+
+  // bg_color_body-menu-hover_elem
+  --n20a3: rgba(201, 201, 201, 0.2);
+
+  // bg_color_body-content-hover_elem
+  --n30a8: rgba(201, 200, 200, 0.8);
+
+  // bg_color_body-transparent_elem
+  --n40a9: rgba(138, 138, 138, 0.8);
+
+  //bg_color_body-leftPart-hover_elem
+  --n45a9: rgb(255, 255, 255);
+
+  //bg_color_body-extentionPanel-hover_elem
+  --n50a9: rgba(237, 237, 237, 0.8);
+
+  // bg_color_footer-hover_elem
+  --n30a4: rgba(201, 200, 200, 0.4);
+
+  // bg_color_body_task-editor_input
+  --n70a4: rgb(255, 255, 255);
+
+  //ПОВТОРАЯЕТСЯ --N100 - COLOR FOR BODY SUBITEMS - цвет для элементов с которыми можно взаимодействовать(в ТЕЛЕ проекта находящиеся)
+  //color for body subitems - цвет для элементов с которыми можно взаимодействовать(в ТЕЛЕ проекта находящиеся
+  --n100: rgb(141, 141, 141);
+
+  // color for body subelements - цвет красный для субкнопок, которые встречаются редко
+  --b500: rgb(219, 76, 63);
+  // main color in project - главные цвет для всех элементов в проекте
+  --n900: rgb(0, 0, 0);
+
+  // main color in project reverse - главные цвет для всех элементов в проекте противоположный(в данном случае белый)
+  --n800: rgb(255, 255, 255);
+
+  //other-backgrounds and colors
+  // main-background - главный бэкграунд
+  --n0: rgb(255, 255, 255);
+
+  //tasks-editor_border-color - редактирование/добавление таска цвет бордера
+  --n60: rgb(221, 221, 221);
+
+  //tasks-editor_border-color_active - редактирование/добавление таска цвет бордера при клике на компонент
+  --n60a8: rgb(28, 27, 27);
+
+  //BORDER BACKGROUND FOR ALL BLOCKS - цвет бордера(ДЛЯ ВСЕХ БЛОКОВ) для разделения блоков на темы
+  --n10: rgb(186, 186, 186);
+
+  // NOT USE - покуда не использованные
+
+  --g400: rgb(71, 215, 141);
+  --g500: rgb(61, 189, 125);
+  --g500a1: rgba(61, 189, 125, 0.1);
+  --g500a2: rgba(61, 189, 125, 0.2);
+
+  --r400: rgb(255, 100, 100);
+  --r500: rgb(255, 0, 0);
+  --r500a1: rgba(255, 0, 0, 0.1);
+  --r500a2: rgba(255, 0, 0, 0.2);
+}
+
+.dark {
+  //HEADER
+
+  //header-backgrounds
+
+  //backgound color for header
+  --n30: rgb(40, 40, 40);
+
+  //color for header icons and text
+  --n600: rgb(227, 227, 227);
+  //для всего выпдающего и вылетающего из хедера динамические использовать другие блоки стилей , кароче все побочное стилизуется отдельно
+
+  //BODY
+
+  //body-backgrounds
+  //backgroun color for body
+
+  //color
+
+  //BODY-MENU
+
+  //background color for body-menu
+  --n20: rgb(40, 40, 40);
+
+  //BODY-CONTENT
+  //DROPDOWN BLOCKS - добавить задачу, напоминания, настройки и т.п
+  //FOOTER
+
+  //OTHER
+  // bg_color_header-hover_elem
+  --n30a3: rgba(40, 40, 40, 0.3);
+
+  // bg_color_body-menu-hover_elem
+  --n20a3: rgba(40, 40, 40, 0.3);
+
+  // bg_color_body-content-hover_elem
+  --n30a8: rgba(40, 40, 40, 0.8);
+
+  // bg_color_body-transparent_elem
+  --n40a9: rgba(138, 138, 138, 0.8);
+
+  //bg_color_body-leftPart-hover_elem
+  --n45a9: rgba(138, 138, 138, 0.8);
+
+  //bg_color_body-extentionPanel-hover_elem
+  --n50a9: rgba(138, 138, 138, 0.8);
+
+  // bg_color_footer-hover_elem
+  --n30a4: rgba(40, 40, 40, 0.4);
+
+  // bg_color_body_task-editor_input
+  --n70a4: rgb(0, 0, 0);
+
+  //ПОВТОРАЯЕТСЯ --N100 - COLOR FOR BODY SUBITEMS - цвет для элементов с которыми можно взаимодействовать(в ТЕЛЕ проекта находящиеся)
+  //color for body subitems - цвет для элементов с которыми можно взаимодействовать(в ТЕЛЕ проекта находящиеся
+  --n100: rgb(141, 141, 141);
+
+  // color for body subelements - цвет красный для субкнопок, которые встречаются редко
+  --b500: rgb(219, 76, 63);
+  // main color in project - главные цвет для всех элементов в проекте
+  --n900: rgb(227, 227, 227);
+
+  // main color in project reverse - главные цвет для всех элементов в проекте противоположный(в данном случае черный)
+  --n800: rgb(0, 0, 0);
+
+  //other-backgrounds and colors
+  // main-background - главный бэкграунд
+  --n0: rgb(31, 31, 31);
+
+  //tasks-editor_border-color - редактирование/добавление таска цвет бордера
+  --n60: rgb(47, 47, 47);
+
+  //tasks-editor_border-color_active - редактирование/добавление таска цвет бордера при клике на компонент
+  --n60a8: rgb(104, 104, 104);
+
+  //BORDER BACKGROUND FOR ALL BLOCKS - цвет бордера(ДЛЯ ВСЕХ БЛОКОВ) для разделения блоков на темы
+  --n10: rgb(186, 186, 186);
+
+  // NOT USE - покуда не использованные
+
+  --g400: rgb(0, 220, 103);
+  --g500: rgb(0, 197, 96);
+  --g500a1: rgba(0, 197, 96, 0.1);
+  --g500a2: rgba(0, 197, 96, 0.2);
+
+  --r400: rgb(248, 23, 1);
+  --r500: rgb(221, 23, 1);
+  --r500a1: rgba(221, 23, 1, 0.1);
+  --r500a2: rgba(221, 23, 1, 0.2);
+}

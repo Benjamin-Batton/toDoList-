@@ -1,0 +1,15 @@
+.rightPart {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  overflow-y: scroll;
+}
+.open{
+  
+}
+.rightPart.open{
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}

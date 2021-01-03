@@ -1,0 +1,13 @@
+.auth {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  grid-template: 1fr / 1fr;
+}
+.authContainer {
+  position: absolute;
+  grid-template: 1fr / 1fr;
+  border: 1px solid rgba(255, 255, 255, 0.87);
+  border-radius: 5px;
+  justify-items: center;
+}

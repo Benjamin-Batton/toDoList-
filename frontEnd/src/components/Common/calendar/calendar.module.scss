@@ -1,0 +1,29 @@
+.calendar{
+    display: grid;
+    grid-template: 1fr / 1fr;
+    color: rgba(255,255,255,0.87);
+    border: 1px solid rgba(255,255,255,0.87) ;
+    border-radius: 5px;
+    background-color: rgb(44, 45, 45);
+}
+
+.calendar > * {
+    padding: 10px 10px 0px 7px;
+}
+
+.calendar :last-child{
+    padding-bottom: 10px;
+}
+
+.calendarPosition {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.calendarModal{
+   position: absolute;
+   background-color: rgb(50, 50, 50);
+   opacity: 60%;
+   width: 100%;
+   height: 100%;
+}
